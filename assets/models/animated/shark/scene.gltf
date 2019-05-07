@@ -3495,10 +3495,10 @@
   ],
   "images": [
     {
-      "uri": "textures/surfaceShader3_baseColor.jpeg"
+      "uri": "surfaceShader3_baseColor.jpeg"
     },
     {
-      "uri": "textures/surfaceShader3_emissive.jpeg"
+      "uri": "surfaceShader3_emissive.jpeg"
     }
   ],
   "materials": [

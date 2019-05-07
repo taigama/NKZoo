@@ -11,12 +11,13 @@
 	<h1 style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>test model</h1>
     <a-scene background="color: #AAAAAA" >
         <a-assets>
-            <a-asset-item id="hippopotamus" src="/assets/models/animated/hippopotamus/scene.gltf"></a-asset-item>
+            <a-asset-item id="model" src="/assets/models/animated/butterfly/scene.glb"></a-asset-item>
         </a-assets>
     
         <a-entity
-        gltf-model="#hippopotamus"
-        autoscale="50">
+        gltf-model="#model"
+        animation-mixer
+        kscale="2">
         </a-entity>
     </a-scene>
     

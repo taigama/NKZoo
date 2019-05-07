@@ -15052,7 +15052,26 @@
       },
       "name": "teeth__nor2_tga"
     },
-    {}
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "glossinessFactor": 0.56262936799999996,
+          "specularFactor": [
+            0.0284678773,
+            0.0284678773,
+            0.0284678773
+          ]
+        }
+      },
+      "name": "unnamed"
+    }
   ],
   "meshes": [
     {
@@ -15148,7 +15167,20 @@
         }
       ]
     },
-    {}
+    {
+      "name": "Plane_unnamed_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 29,
+            "POSITION": 28
+          },
+          "indices": 30,
+          "material": 5,
+          "mode": 4
+        }
+      ]
+    }
   ],
   "nodes": [
     {
@@ -16307,8 +16339,25 @@
       ]
     },
     {
+      "children": [
+        64
+      ],
+      "name": "Plane",
+      "rotation": [
+        -0.7071068286895752,
+        0,
+        0,
+        0.70710670948028564
+      ],
+      "translation": [
+        0,
+        -0.348112553358078,
+        0
+      ]
     },
     {
+      "mesh": 5,
+      "name": "Plane_unnamed_0"
     },
     {
       "name": "Wolf2",

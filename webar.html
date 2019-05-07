@@ -13,27 +13,114 @@
     <a-scene embedded arjs='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 4x4; debugUIEnabled: false;'>
 	
 		<a-assets>
-			<a-asset-item id="hippopotamus" src="/assets/models/animated/hippopotamus/scene.gltf"></a-asset-item>
 			<a-asset-item id="bunny" src="/assets/models/animated/bunny/scene.gltf"></a-asset-item>
+			<a-asset-item id="butterfly" src="/assets/models/animated/butterfly/scene.glb"></a-asset-item>
+			<a-asset-item id="cow" src="/assets/models/animated/cow/scene.gltf"></a-asset-item>
+			<a-asset-item id="crocodile" src="/assets/models/animated/crocodile/scene.gltf"></a-asset-item>
+			<a-asset-item id="guppie" src="/assets/models/animated/guppie/scene.gltf"></a-asset-item>
+			<a-asset-item id="penguin" src="/assets/models/animated/penguin/scene.gltf"></a-asset-item>
+			<a-asset-item id="hippopotamus" src="/assets/models/animated/hippopotamus/scene.gltf"></a-asset-item>
+			<a-asset-item id="rhinoceros" src="/assets/models/animated/rhinoceros/scene.gltf"></a-asset-item>
+			<a-asset-item id="scarlet_macaw" src="/assets/models/animated/scarlet_macaw/scene.gltf"></a-asset-item>
+			<a-asset-item id="shark" src="/assets/models/animated/shark/scene.gltf"></a-asset-item>
+			<a-asset-item id="squirrel" src="/assets/models/animated/squirrel/scene.gltf"></a-asset-item>
+			<a-asset-item id="whale" src="/assets/models/animated/whale/scene.gltf"></a-asset-item>
+			<a-asset-item id="allosaurus" src="/assets/models/animated/allosaurus/scene.gltf"></a-asset-item>
         </a-assets>
 
 		<!-- handle matrix marker -->
-		<a-marker type='barcode' value='1'>
-			<a-entity
-			gltf-model="#hippopotamus"
-			animation-mixer
-			autoscale="200">
-			</a-entity>
-		</a-marker>
 		<a-marker
 		type='barcode'
-		value='2'
-		cursor='rayOrigin: mouse'
+		value='13'
 		>
 			<a-entity
 			gltf-model="#bunny"
 			animation-mixer
-			autoscale="2">
+			kscale="2">
+			</a-entity>
+		</a-marker>
+		<a-marker type='barcode' value='1'>
+			<a-entity
+			gltf-model="#butterfly"
+			animation-mixer
+			kscale="2">
+			</a-entity>
+		</a-marker>
+		<a-marker type='barcode' value='2'>
+			<a-entity
+			gltf-model="#cow"
+			animation-mixer
+			kscale="2">
+			</a-entity>
+		</a-marker>
+		<a-marker type='barcode' value='3'>
+			<a-entity
+			gltf-model="#crocodile"
+			animation-mixer
+			kscale="4">
+			</a-entity>
+		</a-marker>
+		<a-marker type='barcode' value='4'>
+			<a-entity
+			gltf-model="#guppie"
+			animation-mixer
+			kscale="2">
+			</a-entity>
+		</a-marker>
+		<a-marker type='barcode' value='5'>
+			<a-entity
+			gltf-model="#penguin"
+			animation-mixer="clip: PenguinArmature|Walk"
+			kscale="200">
+			</a-entity>
+		</a-marker>
+		<a-marker type='barcode' value='6'>
+			<a-entity
+			gltf-model="#hippopotamus"
+			animation-mixer
+			kscale="200">
+			</a-entity>
+		</a-marker>
+		<a-marker type='barcode' value='7'>
+			<a-entity
+			gltf-model="#rhinoceros"
+			animation-mixer="clip: Armature|ArmatureAction.002"
+			kscale="200">
+			</a-entity>
+		</a-marker>
+		<a-marker type='barcode' value='8'>
+			<a-entity
+			gltf-model="#scarlet_macaw"
+			animation-mixer="clip: Armature|Fly01"
+			kscale="200">
+			</a-entity>
+		</a-marker>
+		<a-marker type='barcode' value='9'>
+			<a-entity
+			gltf-model="#shark"
+			animation-mixer
+			kscale="2">
+			</a-entity>
+		</a-marker>
+		<a-marker type='barcode' value='10'>
+			<a-entity
+			gltf-model="#squirrel"
+			animation-mixer
+			kscale="2">
+			</a-entity>
+		</a-marker>
+		<a-marker type='barcode' value='11'>
+			<a-entity
+			gltf-model="#whale"
+			animation-mixer
+			kscale="2">
+			</a-entity>
+		</a-marker>
+		<a-marker type='barcode' value='12'>
+			<a-entity
+			gltf-model="#allosaurus"
+			animation-mixer
+			kscale="2">
 			</a-entity>
 		</a-marker>
 		
