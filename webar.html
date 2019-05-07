@@ -10,7 +10,10 @@
 
 <body style="margin: 0px; overflow: hidden;">
 	<h1 style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>Web AR Demo 1</h1>
-    <a-scene embedded arjs='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 4x4; debugUIEnabled: false;'>
+	<a-scene
+	embedded
+	arjs='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 4x4; debugUIEnabled: false;'
+	renderer="gammaOutput: true">
 	
 		<a-assets>
 			<a-asset-item id="bunny" src="/assets/models/animated/bunny/scene.gltf"></a-asset-item>
@@ -26,19 +29,10 @@
 			<a-asset-item id="squirrel" src="/assets/models/animated/squirrel/scene.gltf"></a-asset-item>
 			<a-asset-item id="whale" src="/assets/models/animated/whale/scene.gltf"></a-asset-item>
 			<a-asset-item id="allosaurus" src="/assets/models/animated/allosaurus/scene.gltf"></a-asset-item>
+			<a-asset-item id="wolf" src="/assets/models/animated/wolf/scene.gltf"></a-asset-item>
         </a-assets>
 
 		<!-- handle matrix marker -->
-		<a-marker
-		type='barcode'
-		value='13'
-		>
-			<a-entity
-			gltf-model="#bunny"
-			animation-mixer
-			kscale="2">
-			</a-entity>
-		</a-marker>
 		<a-marker type='barcode' value='1'>
 			<a-entity
 			gltf-model="#butterfly"
@@ -120,6 +114,23 @@
 			<a-entity
 			gltf-model="#allosaurus"
 			animation-mixer
+			kscale="2">
+			</a-entity>
+		</a-marker>
+		<a-marker
+		type='barcode'
+		value='13'
+		>
+			<a-entity
+			gltf-model="#bunny"
+			animation-mixer
+			kscale="2">
+			</a-entity>
+		</a-marker>
+		<a-marker type='barcode' value='14'>
+			<a-entity
+			gltf-model="#wolf"
+			animation-mixer="clip: 01_Run"
 			kscale="2">
 			</a-entity>
 		</a-marker>
