@@ -26,7 +26,7 @@ registerSounds = function() {
             
             var audioLoader = new THREE.AudioLoader();
             for(let i = 1; i < strs.length; ++i) {
-                p = "/assets/sounds/" + name + "/" + strs[i] + ".mp3";
+                p = "./assets/sounds/" + name + "/" + strs[i] + ".mp3";
                 audioLoader.load(p, ( buffer ) => {
                     this.buffers.push(buffer);
                 });
