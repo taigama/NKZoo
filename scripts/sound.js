@@ -1,11 +1,8 @@
 initSound = function() {
     var listener = new THREE.AudioListener();
-
-    // create a global audio source
     window.sound = new THREE.Audio( listener );
     window.sound.setVolume(1);
     window.sound.setLoop(false);
-
     window.registerSounds();
 }
 

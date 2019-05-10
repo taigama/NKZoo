@@ -9,5 +9,4 @@ Chào mừng đến với NK's Zoo.
 
 ---  
 
-This website is an implementation of [AR.js](https://github.com/jeromeetienne/AR.js)
-
+- Sách ebook hiện có tại: [https://taigama.github.io/NKZoo/docs/NKZoo_book.pdf]
