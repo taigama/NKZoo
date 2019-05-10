@@ -1,5 +1,9 @@
 initMain = function() {
     window.initAutoScaleCenterGLTF();
+
+    if(window.initSound) {
+      window.initSound();
+    }
 }
 initAutoScaleCenterGLTF = function() {
     AFRAME.registerComponent('kscale', {
