@@ -9,4 +9,4 @@ Chào mừng đến với NK's Zoo.
 
 ---  
 
-- Sách ebook hiện có tại: [https://taigama.github.io/NKZoo/docs/NKZoo_book.pdf]
+- Sách ebook hiện có tại: [https://taigama.github.io/NKZoo/docs/NKZoo_book.pdf](https://taigama.github.io/NKZoo/docs/NKZoo_book.pdf)
