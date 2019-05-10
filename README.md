@@ -1,5 +1,7 @@
 ## NKZoo
 
+![Image](https://taigama.github.io/NKZoo/docs/front.jpg)
+
 Chào mừng đến với NK's Zoo.  
 
 - Nhằm mục đích cung cấp cho các trẻ hình ảnh về các loài động vật hoang dã trên thế giới, chúng tôi đã xuất bản cuốn sách NK's zoo.
