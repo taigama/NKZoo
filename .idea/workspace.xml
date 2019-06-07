@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e9340c6-ec51-4a3a-8418-8b53f9d9154a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/arjs-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/arjs-test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/scripts/entity-event.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/scripts/entity-event.js" afterDir="false" />
@@ -17,20 +18,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/scripts/entity-event.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="69" column="23" lean-forward="true" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
+            <state relative-caret-position="539">
+              <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
+              <folding>
+                <element signature="e#35#582#0" />
+                <element signature="e#101#199#0" />
+                <element signature="e#224#579#0" />
+                <element signature="e#630#1649#0" />
+                <element signature="e#654#805#0" />
+                <element signature="e#830#1547#0" />
+                <element signature="e#1579#1615#0" />
+                <element signature="e#1010#1228#0" />
+                <element signature="e#1650#1793#0" />
+                <element signature="e#1826#2503#0" />
+                <element signature="e#1122#1226#0" />
+                <element signature="e#1327#1599#0" />
+                <element signature="e#1351#1359#0" />
+                <element signature="e#1392#1400#0" />
+                <element signature="e#1439#1597#0" />
+                <element signature="e#1696#2073#0" />
+                <element signature="e#1808#2071#0" />
+                <element signature="n#!!block;n#appendHtml#0" />
+                <element signature="e#1398#1446#0" />
+                <element signature="e#1533#1611#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/arjs-test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="37" column="128" selection-start-line="37" selection-start-column="111" selection-end-line="37" selection-end-column="128" />
+            <state relative-caret-position="434">
+              <caret line="37" column="28" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="28" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -42,6 +65,10 @@
     </leaf>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>matrix</find>
+      <find>a-marker</find>
+    </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
@@ -54,8 +81,8 @@
       <list>
         <option value="$PROJECT_DIR$/webar.html" />
         <option value="$PROJECT_DIR$/default.htm" />
-        <option value="$PROJECT_DIR$/test/scripts/entity-event.js" />
         <option value="$PROJECT_DIR$/test/arjs-test.html" />
+        <option value="$PROJECT_DIR$/test/scripts/entity-event.js" />
       </list>
     </option>
   </component>
@@ -78,17 +105,6 @@
             <path>
               <item name="NKZoo" type="b2602c69:ProjectViewProjectNode" />
               <item name="NKZoo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NKZoo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NKZoo" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NKZoo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NKZoo" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NKZoo" type="b2602c69:ProjectViewProjectNode" />
@@ -118,15 +134,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.arjs-test.html">
+  <component name="RunManager" selected="Node.js.entity-event.js">
     <configuration name="arjs-test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NKZoo/test/arjs-test.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="webar.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NKZoo/webar.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="entity-event.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="entity-event.js" working-dir="$PROJECT_DIR$/test/scripts">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.entity-event.js" />
         <item itemvalue="JavaScript Debug.arjs-test.html" />
         <item itemvalue="JavaScript Debug.webar.html" />
       </list>
@@ -142,23 +162,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559899251377</updated>
-      <workItem from="1559899252706" duration="11087000" />
+      <workItem from="1559899252706" duration="17914000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11348000" />
+    <option name="totallyTimeSpent" value="18175000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20819564" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20819564" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -232,20 +252,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/scripts/entity-event.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="69" column="23" lean-forward="true" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/arjs-test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="37" column="128" selection-start-line="37" selection-start-column="111" selection-end-line="37" selection-end-column="128" />
+        <state relative-caret-position="434">
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/scripts/entity-event.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
+          <folding>
+            <element signature="e#35#582#0" />
+            <element signature="e#101#199#0" />
+            <element signature="e#224#579#0" />
+            <element signature="e#630#1649#0" />
+            <element signature="e#654#805#0" />
+            <element signature="e#830#1547#0" />
+            <element signature="e#1579#1615#0" />
+            <element signature="e#1010#1228#0" />
+            <element signature="e#1650#1793#0" />
+            <element signature="e#1826#2503#0" />
+            <element signature="e#1122#1226#0" />
+            <element signature="e#1327#1599#0" />
+            <element signature="e#1351#1359#0" />
+            <element signature="e#1392#1400#0" />
+            <element signature="e#1439#1597#0" />
+            <element signature="e#1696#2073#0" />
+            <element signature="e#1808#2071#0" />
+            <element signature="n#!!block;n#appendHtml#0" />
+            <element signature="e#1398#1446#0" />
+            <element signature="e#1533#1611#0" />
           </folding>
         </state>
       </provider>

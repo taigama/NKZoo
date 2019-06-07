@@ -27,22 +27,52 @@ AFRAME.registerComponent('register-events', {
     },
     onMarkerFound: function () {
         currentElement = this.querySelector("a-entity");
-        let position = new THREE.Vector3();
-        let rotation = new THREE.Euler();
-        let scale = currentElement.getObject3D('mesh').scale;
-        currentElement.object3D.getWorldPosition(position);
-        currentElement.object3D.getWorldQuaternion(rotation);
-
-        console.log('found=======================================================');
-        console.log(`id=${JSON.stringify(currentElement.getAttribute('id'))}`);
-        console.log(`position=${JSON.stringify(position)}`);
-        console.log(`rotation=${JSON.stringify(rotation)}`);
-        console.log(`scale=${JSON.stringify(scale)}`);
     },
     onMarkerLost: function () {
-        console.log('lost');
+
     },
 });
+
+AFRAME.registerComponent('move-forward', {
+    init: function () {
+
+    },
+    onMarkerFound: function () {
+
+    },
+    tick: function (time, timeDelta) {
+        let timeDeltaSeconds = timeDelta / 1000;
+        this.el.object3D.position.x += timeDeltaSeconds;
+    }
+});
+
+AFRAME.registerComponent('register-events-camera', {
+    init: function () {
+
+    },
+    onMarkerFound: function () {
+
+    },
+    tick: function (time, timeDelta) {
+        let position = new THREE.Vector3();
+        let rotation = new THREE.Euler();
+        this.el.object3D.getWorldPosition(position);
+        this.el.object3D.getWorldQuaternion(rotation);
+        console.log(position);
+        console.log(rotation);
+    }
+});
+
+AFRAME.registerComponent('listener', {
+    tick: function () {
+        let position = new THREE.Vector3();
+        let rotation = new THREE.Euler();
+        this.el.object3D.getWorldPosition(position);
+        this.el.object3D.getWorldQuaternion(rotation);
+        console.log(position);
+    }
+});
+
 
 let currentElement = null;
 
@@ -68,11 +98,12 @@ function save() {
     currentElement.object3D.getWorldQuaternion(rotation);
 
     let attribute = "";
+    attribute = attribute + ` gltf-model="${currentElement.getAttribute('gltf-model')}" `;
     attribute = attribute + ` position="${position.x} ${position.y} ${position.z}" `;
     attribute = attribute + ` rotation="${THREE.Math.radToDeg(rotation.x)} ${THREE.Math.radToDeg(rotation.y)} ${THREE.Math.radToDeg(rotation.z)}" `;
     attribute = attribute + ` scale="${scale.x} ${scale.y} ${scale.z}" `;
 
-    appendHtml(scene, `<a-entity gltf-model="#butterfly" ${attribute} animation-mixer shadow="cast: true; receive: true;"></a-entity>`);
+    appendHtml(scene, `<a-entity ${attribute} animation-mixer shadow="cast: true; receive: true;"></a-entity>`);
 }
 
 window.save = save;
