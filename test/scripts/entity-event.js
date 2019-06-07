@@ -26,15 +26,22 @@ AFRAME.registerComponent('register-events', {
         this.el.addEventListener('markerLost', this.onMarkerLost);
     },
     onMarkerFound: function () {
-        currentElement = this;
+        currentElement = this.querySelector("a-entity");
+        let position = new THREE.Vector3();
+        let rotation = new THREE.Euler();
+        let scale = currentElement.getObject3D('mesh').scale;
+        currentElement.object3D.getWorldPosition(position);
+        currentElement.object3D.getWorldQuaternion(rotation);
+
         console.log('found=======================================================');
-        console.log(`position=${JSON.stringify(currentElement.object3D.position)}`);
-        console.log(`rotation=${JSON.stringify(currentElement.object3D.rotation)}`);
-        console.log(`scale=${JSON.stringify(currentElement.object3D.scale)}`);
+        console.log(`id=${JSON.stringify(currentElement.getAttribute('id'))}`);
+        console.log(`position=${JSON.stringify(position)}`);
+        console.log(`rotation=${JSON.stringify(rotation)}`);
+        console.log(`scale=${JSON.stringify(scale)}`);
     },
     onMarkerLost: function () {
         console.log('lost');
-    }
+    },
 });
 
 let currentElement = null;
@@ -53,15 +60,19 @@ function save() {
         return;
     }
     let scene = document.getElementById('scene');
-    let position = currentElement.object3D.position;
-    let rotation = currentElement.object3D.rotation;
-    let scale = currentElement.object3D.scale;
+    let position = new THREE.Vector3();
+    let rotation = new THREE.Euler();
+    let scale = currentElement.getObject3D('mesh').scale;
+
+    currentElement.object3D.getWorldPosition(position);
+    currentElement.object3D.getWorldQuaternion(rotation);
+
     let attribute = "";
     attribute = attribute + ` position="${position.x} ${position.y} ${position.z}" `;
-    attribute = attribute + ` rotation="${rotation.x} ${rotation.y} ${rotation.z}" `;
+    attribute = attribute + ` rotation="${THREE.Math.radToDeg(rotation.x)} ${THREE.Math.radToDeg(rotation.y)} ${THREE.Math.radToDeg(rotation.z)}" `;
     attribute = attribute + ` scale="${scale.x} ${scale.y} ${scale.z}" `;
 
-    appendHtml(scene, `<a-entity gltf-model="#butterfly" ${attribute} kscale="4" animation-mixer shadow="cast: true; receive: true;"></a-entity>`);
+    appendHtml(scene, `<a-entity gltf-model="#butterfly" ${attribute} animation-mixer shadow="cast: true; receive: true;"></a-entity>`);
 }
 
 window.save = save;
