@@ -35,13 +35,13 @@
 
 		<!-- handle matrix marker -->
 		<a-marker
-		type='barcode'
-		value='1'
+		type='barcode' value='1'
+		marker_sound='butterfly'
 		>
 			<a-entity
 			gltf-model="#butterfly"
 			animation-mixer
-			kscale="4">
+			kscale="2">
 			</a-entity>
 		</a-marker>
 		<a-marker type='barcode' value='2'
@@ -49,7 +49,7 @@
 			<a-entity
 			gltf-model="#cow"
 			animation-mixer
-			kscale="4">
+			kscale="2">
 			</a-entity>
 		</a-marker>
 		<a-marker type='barcode' value='3'
@@ -57,14 +57,15 @@
 			<a-entity
 			gltf-model="#crocodile"
 			animation-mixer
-			kscale="8">
+			kscale="4">
 			</a-entity>
 		</a-marker>
-		<a-marker type='barcode' value='4'>
+		<a-marker type='barcode' value='4'
+		marker_sound='guppie'>
 			<a-entity
 			gltf-model="#guppie"
 			animation-mixer
-			kscale="4">
+			kscale="2">
 			</a-entity>
 		</a-marker>
 		<a-marker type='barcode' value='5'
@@ -72,7 +73,7 @@
 			<a-entity
 			gltf-model="#penguin"
 			animation-mixer="clip: PenguinArmature|Walk"
-			kscale="400">
+			kscale="200">
 			</a-entity>
 		</a-marker>
 		<a-marker type='barcode' value='6'
@@ -80,7 +81,7 @@
 			<a-entity
 			gltf-model="#hippopotamus"
 			animation-mixer
-			kscale="400">
+			kscale="200">
 			</a-entity>
 		</a-marker>
 		<a-marker type='barcode' value='7'
@@ -88,7 +89,7 @@
 			<a-entity
 			gltf-model="#rhinoceros"
 			animation-mixer="clip: Armature|ArmatureAction.002"
-			kscale="400">
+			kscale="200">
 			</a-entity>
 		</a-marker>
 		<a-marker type='barcode' value='8'
@@ -96,14 +97,15 @@
 			<a-entity
 			gltf-model="#macaw"
 			animation-mixer="clip: Armature|Fly01"
-			kscale="400">
+			kscale="200">
 			</a-entity>
 		</a-marker>
-		<a-marker type='barcode' value='9'>
+		<a-marker type='barcode' value='9'
+		marker_sound='shark'>
 			<a-entity
 			gltf-model="#shark"
 			animation-mixer
-			kscale="4">
+			kscale="2">
 			</a-entity>
 		</a-marker>
 		<a-marker type='barcode' value='10'
@@ -111,7 +113,7 @@
 			<a-entity
 			gltf-model="#squirrel"
 			animation-mixer
-			kscale="4">
+			kscale="2">
 			</a-entity>
 		</a-marker>
 		<a-marker type='barcode' value='11'
@@ -119,7 +121,7 @@
 			<a-entity
 			gltf-model="#whale"
 			animation-mixer
-			kscale="4">
+			kscale="2">
 			</a-entity>
 		</a-marker>
 		<a-marker type='barcode' value='12'
@@ -127,7 +129,7 @@
 			<a-entity
 			gltf-model="#allosaurus"
 			animation-mixer
-			kscale="4">
+			kscale="2">
 			</a-entity>
 		</a-marker>
 		<a-marker
@@ -138,7 +140,7 @@
 			<a-entity
 			gltf-model="#bunny"
 			animation-mixer
-			kscale="4">
+			kscale="2">
 			</a-entity>
 		</a-marker>
 		<a-marker type='barcode' value='14'
@@ -146,12 +148,18 @@
 			<a-entity
 			gltf-model="#wolf"
 			animation-mixer="clip: 01_Run"
-			kscale="4">
+			kscale="2">
 			</a-entity>
 		</a-marker>
 		
         <!-- add a simple camera -->
 		<a-entity camera></a-entity>
-    </a-scene>
+	</a-scene>
+	<img
+		id="btn"
+		style="width: 200px; height: 200px; position: fixed; top: 10px; right: 10px;"
+		onclick="window.onClickSpeech()"
+		src="./iconfinder_button_31_61462.png"
+		/>
 </body>
 </html>
