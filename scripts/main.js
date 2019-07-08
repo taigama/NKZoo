@@ -29,4 +29,16 @@ initAutoScaleCenterGLTF = function() {
   });
 }
 
+
+resetButtonSize = function() {
+  var small = screen.width < screen.height? screen.width:screen.height;
+  small = small/5;
+  document.getElementById("btn").style.width = "" + small + "px";
+  document.getElementById("btn").style.height = "" + small + "px";
+}
+
 window.initMain();
+
+// window.addEventListener('resize', function(event){
+//   window.resetButtonSize();
+// });
