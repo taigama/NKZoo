@@ -7,6 +7,8 @@
 	<script src='https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js'></script>
 	<script src="./scripts/sound.js"></script>
 	<script src="./scripts/main.js"></script>
+	<script src='https://hammerjs.github.io/dist/hammer.min.js'></script>
+	<script src="./scripts/drag.js"></script>
 </head>
 
 <body style="margin: 0; overflow: hidden;">
@@ -38,7 +40,7 @@
 		type='barcode' value='1'
 		marker_sound='butterfly'
 		>
-			<a-entity
+			<a-entity drag-event
 			gltf-model="#butterfly"
 			animation-mixer
 			kscale="2">
@@ -46,7 +48,7 @@
 		</a-marker>
 		<a-marker type='barcode' value='2'
 		marker_sound='cow 1 2 3'>
-			<a-entity
+			<a-entity drag-event
 			gltf-model="#cow"
 			animation-mixer
 			kscale="2">
@@ -54,7 +56,7 @@
 		</a-marker>
 		<a-marker type='barcode' value='3'
 		marker_sound='crocodile 1 2 3 4'>
-			<a-entity
+			<a-entity drag-event
 			gltf-model="#crocodile"
 			animation-mixer
 			kscale="4">
@@ -62,7 +64,7 @@
 		</a-marker>
 		<a-marker type='barcode' value='4'
 		marker_sound='guppie'>
-			<a-entity
+			<a-entity drag-event
 			gltf-model="#guppie"
 			animation-mixer
 			kscale="2">
@@ -70,7 +72,7 @@
 		</a-marker>
 		<a-marker type='barcode' value='5'
 		marker_sound='penguin 1 2 3 4'>
-			<a-entity
+			<a-entity drag-event
 			gltf-model="#penguin"
 			animation-mixer="clip: PenguinArmature|Walk"
 			kscale="200">
@@ -78,7 +80,7 @@
 		</a-marker>
 		<a-marker type='barcode' value='6'
 		marker_sound='hippopotamus 1 2 3'>
-			<a-entity
+			<a-entity drag-event
 			gltf-model="#hippopotamus"
 			animation-mixer
 			kscale="200">
@@ -86,7 +88,7 @@
 		</a-marker>
 		<a-marker type='barcode' value='7'
 		marker_sound='rhinoceros 1'>
-			<a-entity
+			<a-entity drag-event
 			gltf-model="#rhinoceros"
 			animation-mixer="clip: Armature|ArmatureAction.002"
 			kscale="200">
@@ -94,7 +96,7 @@
 		</a-marker>
 		<a-marker type='barcode' value='8'
 		marker_sound='macaw 1 2 3 4'>
-			<a-entity
+			<a-entity drag-event
 			gltf-model="#macaw"
 			animation-mixer="clip: Armature|Fly01"
 			kscale="200">
@@ -102,7 +104,7 @@
 		</a-marker>
 		<a-marker type='barcode' value='9'
 		marker_sound='shark'>
-			<a-entity
+			<a-entity drag-event
 			gltf-model="#shark"
 			animation-mixer
 			kscale="2">
@@ -110,7 +112,7 @@
 		</a-marker>
 		<a-marker type='barcode' value='10'
 		marker_sound='squirrel 1 2 3 4'>
-			<a-entity
+			<a-entity drag-event
 			gltf-model="#squirrel"
 			animation-mixer
 			kscale="2">
@@ -118,7 +120,7 @@
 		</a-marker>
 		<a-marker type='barcode' value='11'
 		marker_sound='whale 1 2 3 4'>
-			<a-entity
+			<a-entity drag-event
 			gltf-model="#whale"
 			animation-mixer
 			kscale="2">
@@ -126,7 +128,7 @@
 		</a-marker>
 		<a-marker type='barcode' value='12'
 		marker_sound='allosaurus 1 2 3 4'>
-			<a-entity
+			<a-entity drag-event
 			gltf-model="#allosaurus"
 			animation-mixer
 			kscale="2">
@@ -137,7 +139,7 @@
 		value='13'
 		marker_sound='bunny 1 2 3 4'
 		>
-			<a-entity
+			<a-entity drag-event
 			gltf-model="#bunny"
 			animation-mixer
 			kscale="2">
@@ -145,7 +147,7 @@
 		</a-marker>
 		<a-marker type='barcode' value='14'
 		marker_sound='wolf 1 2 3 4'>
-			<a-entity
+			<a-entity drag-event
 			gltf-model="#wolf"
 			animation-mixer="clip: 01_Run"
 			kscale="2">
@@ -164,5 +166,6 @@
 </body>
 <script>
 	window.resetButtonSize();
+	window.dragInit();
 </script>
 </html>
