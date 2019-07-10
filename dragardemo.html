@@ -14,25 +14,50 @@
 	<h1 style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>NK's Zoo</h1>
 	<a-scene
 	embedded
-	arjs='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 4x4; debugUIEnabled: false;'
+	arjs='patternRatio: 0.7; sourceType: webcam; detectionMode: color; matrixCodeType: 4x4; debugUIEnabled: false;'
 	renderer="gammaOutput: true">
 	
 		<a-assets timeout="10000">
-			<a-asset-item id="crocodile" src="./assets/models/animated/crocodile/scene.gltf" preload="auto"></a-asset-item>
+			<a-asset-item id="guppie" src="./assets/models/animated/guppie/scene.gltf" preload="auto"></a-asset-item>
+			<a-asset-item id="cow" src="./assets/models/animated/cow/scene.gltf" preload="auto"></a-asset-item>
         </a-assets>
 
 		<!-- handle matrix marker -->
 		
-		<a-marker type='barcode' value='1'>
+		<a-marker type='pattern' url='./assets/markers/pattern-ca.patt'>
 			<a-entity
 			drag-event
-			gltf-model="#crocodile"
+			gltf-model="#guppie"
 			animation-mixer
-			scale="1 1 1">
+			scale="0.01 0.01 0.01">
 			</a-entity>
 		</a-marker>
+		<a-marker type='pattern' url='./assets/markers/pattern-colorca.patt'>
+			<a-entity
+			drag-event
+			gltf-model="#guppie"
+			animation-mixer
+			scale="0.01 0.01 0.01">
+			</a-entity>
+		</a-marker>
+
 		
-		
+		<a-marker type='pattern' url='./assets/markers/pattern-bo.patt'>
+			<a-entity
+			drag-event
+			gltf-model="#cow"
+			animation-mixer
+			scale="0.01 0.01 0.01">
+			</a-entity>
+		</a-marker>
+		<a-marker type='pattern' url='./assets/markers/pattern-colorbo.patt'>
+			<a-entity
+			drag-event
+			gltf-model="#cow"
+			animation-mixer
+			scale="0.01 0.01 0.01">
+			</a-entity>
+		</a-marker>
         <!-- add a simple camera -->
 		<a-entity camera></a-entity>
 	</a-scene>
