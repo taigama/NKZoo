@@ -1,7 +1,3 @@
----
-title: NKZoo
----
-
 ## NKZoo
 
 ![Image](https://taigama.github.io/NKZoo/docs/front.jpg)
