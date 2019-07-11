@@ -9,6 +9,23 @@
 	<script src="./scripts/main.js"></script>
 	<script src='https://hammerjs.github.io/dist/hammer.min.js'></script>
 	<script src="./scripts/drag.js"></script>
+	<style>
+		.show {
+			opacity: 1;
+			transition: opacity 500ms;
+		}
+		.hide {
+			opacity: 0;
+			transition: opacity 500ms;
+		}
+		.mybtn {
+			width: 0px;
+			height: 0px;
+			position: fixed;
+			top: 10px;
+			right: 10px;
+		}
+	</style>
 </head>
 
 <body style="margin: 0; overflow: hidden;">
@@ -167,17 +184,22 @@
 
 		
         <!-- add a simple camera -->
-		<a-entity camera></a-entity>
+		<a-entity camera done_camera></a-entity>
 	</a-scene>
-	<img
-		id="btn"
-		style="width: 200px; height: 200px; position: fixed; top: 10px; right: 10px;"
+	<img class="mybtn"
+		id="btn_p"
 		onclick="window.onClickSpeech()"
 		src="./iconfinder_button_31_61462.png"
 		/>
+	<img class="mybtn hide"
+		id="btn_s"
+		onclick="window.onClickSpeech()"
+		src="./iconfinder_button_32_61463.png"
+	/>
 </body>
 <script>
-	window.resetButtonSize();
+	window.initMain();
+	window.buttonInit();
 	window.dragInit();
 </script>
 </html>

@@ -29,16 +29,25 @@ initAutoScaleCenterGLTF = function() {
   });
 }
 
-
-resetButtonSize = function() {
-  var small = screen.width < screen.height? screen.width:screen.height;
-  small = small/5;
-  document.getElementById("btn").style.width = "" + small + "px";
-  document.getElementById("btn").style.height = "" + small + "px";
+buttonInit = function() {
+  window.btnPlay = document.getElementById("btn_p");
+  window.btnStop = document.getElementById("btn_s");
 }
 
-window.initMain();
 
-// window.addEventListener('resize', function(event){
-//   window.resetButtonSize();
-// });
+AFRAME.registerComponent("done_camera", {
+  init: function () {
+    setTimeout(() => {
+      window.resetButtonSize();
+    }, 5000);
+  }
+});
+
+resetButtonSize = function() {
+  var small = window.innerWidth < window.innerHeight? window.innerWidth : window.innerHeight;
+  small = small/5;
+  window.btnPlay.style.width = "" + small + "px";
+  window.btnPlay.style.height = "" + small + "px";
+  window.btnStop.style.width = "" + small + "px";
+  window.btnStop.style.height = "" + small + "px";
+}

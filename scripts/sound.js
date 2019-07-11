@@ -90,13 +90,21 @@ registerSounds = function() {
 onClickSpeech = function() {
     if(window.speechState) {
         if(window.stopSpeaking()){
-            document.getElementById("btn").src = "./iconfinder_button_31_61462.png";
+            //document.getElementById("btn").src = "./iconfinder_button_31_61462.png";
+            window.btnStop.classList.add("hide");
+            window.btnStop.classList.remove("show");
+            // window.btnPlay.classList.add("show");
+            // window.btnPlay.classList.remove("hide");
             window.speechState = false;
         }
     }
     else {
         if(window.speakCurrent()){
-            document.getElementById("btn").src = "./iconfinder_button_32_61463.png";
+            //document.getElementById("btn").src = "./iconfinder_button_32_61463.png";
+            // window.btnPlay.classList.add("hide");
+            // window.btnPlay.classList.remove("show");
+            window.btnStop.classList.add("show");
+            window.btnStop.classList.remove("hide");
             window.speechState = true;
         }
     }
