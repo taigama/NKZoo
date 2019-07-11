@@ -14,16 +14,16 @@ dragInit = function() {
                 let rotation = model.getAttribute("rotation")
                 switch(ev.direction) {
                     case 2:
-                        rotation.y = rotation.y + 4
-                        break;
-                    case 4:
                         rotation.y = rotation.y - 4
                         break;
+                    case 4:
+                        rotation.y = rotation.y + 4
+                        break;
                     case 8:
-                        rotation.x = rotation.x + 4
+                        rotation.x = rotation.x - 4
                         break;
                     case 16:
-                        rotation.x = rotation.x - 4
+                        rotation.x = rotation.x + 4
                         break;
                     default:
                         break;
