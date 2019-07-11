@@ -15,7 +15,7 @@
 	<h1 style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>NK's Zoo</h1>
 	<a-scene
 	embedded
-	arjs='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 4x4; debugUIEnabled: false;'
+	arjs='patternRatio: 0.8; sourceType: webcam; detectionMode: color; matrixCodeType: 4x4; debugUIEnabled: false;'
 	renderer="gammaOutput: true">
 	
 		<a-assets timeout="10000">
@@ -37,7 +37,7 @@
 
 		<!-- handle matrix marker -->
 		<a-marker
-		type='barcode' value='1'
+		type='pattern' url='./assets/markers/pattern/butterfly.patt'
 		marker_sound='butterfly'
 		>
 			<a-entity drag-event
