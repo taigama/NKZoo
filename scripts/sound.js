@@ -67,6 +67,7 @@ registerSounds = function() {
             let marker = this.el;
             marker.addEventListener('markerFound', () => {
                 window.currentId = this.name;
+                console.log("found: " + this.name);
 
                 if(this.buffers.length == 0)
                     return;
